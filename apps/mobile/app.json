@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "MiniLedger",
+    "slug": "mini-ledger",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "miniledger",
+    "userInterfaceStyle": "light",
+    "plugins": ["expo-router", "expo-secure-store"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "android": {
+      "package": "com.miniledger.app"
+    },
+    "ios": {
+      "bundleIdentifier": "com.miniledger.app"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

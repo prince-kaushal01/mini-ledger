@@ -1,0 +1,24 @@
+node_modules/
+.expo/
+dist/
+web-dist/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+
+# Generated database client and local uploads
+apps/api/src/generated/
+apps/api/uploads/*
+!apps/api/uploads/.gitkeep
+
+# Native build output
+apps/mobile/android/
+apps/mobile/ios/
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

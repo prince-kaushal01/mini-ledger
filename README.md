@@ -350,38 +350,6 @@ Confirm that `.env` exists in the repository root and was copied from `.env.exam
 
 Request a new one. OTPs expire after five minutes, can only be used once, and are cleared whenever the backend restarts.
 
-## Suggested 2–3 minute recording
-
-1. Briefly show the repository and README.
-2. Open the login screen and request an OTP.
-3. Show the OTP line in the API terminal, then complete login.
-4. Add a normal future-due loan.
-5. Add an entry using a past date to show overdue highlighting.
-6. Point out total lent, repaid, outstanding, and overdue amounts.
-7. Mark one entry repaid and show the instant summary update.
-8. End on the colourful dashboard and mention the test command.
-
-## Publishing to GitHub
-
-After you have reviewed the code and replaced any personal details you want to change:
-
-```powershell
-git init
-git add .
-git commit -m "Build MiniLedger internship assignment"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/mini-ledger.git
-git push -u origin main
-```
-
-Create the empty `mini-ledger` repository on GitHub before adding the remote, or use the GitHub CLI:
-
-```powershell
-gh repo create mini-ledger --public --source . --remote origin --push
-```
-
-Do not commit `.env`; it is already ignored. After uploading your Loom or Google Drive recording, add its public viewing link near the top of this README.
-
 ## Deliberate scope choices
 
 - OTP storage is in memory because the assignment explicitly requests a mock OTP. A real system would use an SMS provider, hashed challenges, rate limits, and shared expiring storage.

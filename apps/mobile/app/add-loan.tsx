@@ -47,7 +47,7 @@ export default function AddLoanScreen() {
     setError("");
     try {
       await api.createLoan(token!, { friendName: friendName.trim(), amount: parsedAmount, dueDate });
-      router.back();
+      router.replace({ pathname: "/home", params: { notice: "loan-added" } });
     } catch (requestError) {
       setError(requestError instanceof Error ? requestError.message : "Could not save this loan");
     } finally {

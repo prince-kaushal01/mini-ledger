@@ -34,6 +34,8 @@ export function LoanItem({ loan, isUpdating, onRepay }: Props) {
 
         {!loan.isRepaid && (
           <Pressable
+            accessibilityLabel={`Mark ${loan.friendName}'s loan as repaid`}
+            accessibilityRole="button"
             disabled={isUpdating}
             onPress={() => onRepay(loan)}
             style={({ pressed }) => [styles.repayButton, pressed && styles.pressed]}
